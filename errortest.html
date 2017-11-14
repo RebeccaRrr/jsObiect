@@ -34,6 +34,9 @@ function myFunction() {
     catch(err) {
         message.innerHTML = "输入的值 " + err;
     }
+    finally{
+        document.getElementById("demo").value = "";
+    }
 }
 </script>
 </body>

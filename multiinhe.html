@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<script type="text/javascript">
+    function multi(){
+        var n ={},stuff,j = 0,len =arguments.length;
+        for(j = 0;j<len;j++){
+            stuff = arguments[j];
+            for(var i in stuff){
+                n[i] = stuff[i];
+            }
+        }
+        return n;
+    }
+    
+
+</script>
+</body>
+</html>

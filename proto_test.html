@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>A prototype test</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<script type="text/javascript">
+	var shape = {
+		type:"triangle",
+		getType:function(){
+            return this.type;
+		},
+		getPerimeter:function(){
+			return 6;
+
+		}
+	};
+    function Triangle(a,b,c){
+    	this.a = a;
+    	this.b = b;
+    	this.c = c;
+
+    }
+    Triangle.prototype = shape;
+    var t = new Triangle(1,2,3);
+    // t.constructor
+    // shape.isPrototypeOf(t)
+    // t.getPerimeter()
+    // t.getType()
+    for(var prop in t){
+    	if(t.hasOwnProperty(prop)){
+    		document.write(prop + ":" + t[prop]);
+
+    	}
+    	
+    }
+</script>
+  
+</body>
+</html>
